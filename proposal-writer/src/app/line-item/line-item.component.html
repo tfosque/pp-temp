@@ -1,0 +1,22 @@
+<h5>Good</h5>
+<div>Description: Shingles </div>
+<div class="mt-3 mb-3">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let i of goodQuote[0].items">
+      <div class="row line-item" >
+        <div class="col-8">
+          {{i.label}}
+        </div>
+        <div class="col-1">
+          {{ i.price | currency }}
+        </div>
+        <div class="col-1">
+          {{i.qty}}
+        </div>
+        <div class="col-1">
+          {{i.qty * i.price | currency}}
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
