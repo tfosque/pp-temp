@@ -2,6 +2,12 @@
   <div class="row">
     <div class="col-8">Summary:</div>
     <div class="col-4 text-right">Subtotal: {{ subtotal | currency }}</div>
-    <div class="col offset-8 text-right">Total: {{ total | currency }}</div>
+    <div
+      [ngClass]="{
+        'text-success': selected,
+        'text-secondary': !selected
+      }"
+      class="col offset-8 text-right"
+      >Total: {{ total | currency }} </div>
   </div>
 </li>

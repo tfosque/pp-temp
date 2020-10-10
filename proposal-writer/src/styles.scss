@@ -18,12 +18,20 @@ section > h5 {
   }
 
   h6 {
-    // color: rgb(163, 159, 159);
     text-transform: uppercase;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 30px;
     margin-bottom: 0px;
-    // font-size: 1rem;
+  }
+}
+
+ul {
+  li.list-group-item {
+    position: relative;
+    display: block;
+    padding: .4rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
   }
 }

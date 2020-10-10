@@ -64,19 +64,6 @@ export class GoodQuoteComponent implements OnInit {
   tax: number;
   constructor() { }
 
-  ngOnInit() {
-    this.calcTotals();
-  }
-
-  calcTotals() {
-    const [items] = this.goodQuote;
-    const subtotal = items.items.map(m => m.price * m.qty);
-    const reduced = subtotal.reduce((a, b) => a + b, 0);
-    this.subtotal = reduced;
-
-/*     console.log({items});
-    console.log({subtotal});
-    console.log({reduced}); */
-  }
+  ngOnInit() { }
 
 }

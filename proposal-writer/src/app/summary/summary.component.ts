@@ -8,9 +8,11 @@ import { GoodQuote, Items } from '../models/good-quote';
 })
 export class SummaryComponent implements OnInit {
   @Input() quote: GoodQuote[] = [];
+  @Input() selected: boolean;
   subtotal: number;
   total = 0;
   tax = .0725;
+
   constructor() { }
 
   ngOnInit() {
@@ -21,6 +23,8 @@ export class SummaryComponent implements OnInit {
 
     this.subtotal = subtotal;
     this.total = total;
+    console.log(this.selected, typeof this.selected);
+
 
   /*   console.log({ subtotalItems });
     console.log({ subtotal }, { tax });

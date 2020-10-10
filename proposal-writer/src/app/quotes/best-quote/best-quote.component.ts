@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-best-quote',
@@ -6,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./best-quote.component.scss']
 })
 export class BestQuoteComponent implements OnInit {
-
-
   subtotal: number;
   // tax: number;
   total: number;
@@ -63,15 +61,6 @@ export class BestQuoteComponent implements OnInit {
       }
     ]
   }];
-  ngOnInit() {
-    // this.calcTotals();
-  }
-
-  calcTotals() {
-    // const [items] = this.bestQuote;
-    /*    console.log({items});
-       console.log({subtotal});
-       console.log({reduced}); */
-  }
+  ngOnInit() { }
 
 }

@@ -18,26 +18,28 @@ import { BestQuoteComponent } from './quotes/best-quote/best-quote.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { SubTotalComponent } from './quotes/sub-total/sub-total.component';
 import { NotesComponent } from './notes/notes.component';
+import { EstimateComponent } from './estimate/estimate.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
-      IntroComponent,
-      TermsAndConditionsComponent,
-      SignatureComponent,
-      AuthorizationComponent,
-      LineItemComponent,
-      CoverPhotoComponent,
-      SummaryComponent,
-      LogoComponent,
-      HeaderComponent,
-      GoodQuoteComponent,
-      BetterQuoteComponent,
-      BestQuoteComponent,
-      QuotesComponent,
-      SubTotalComponent,
-      NotesComponent
-   ],
+    IntroComponent,
+    TermsAndConditionsComponent,
+    SignatureComponent,
+    AuthorizationComponent,
+    LineItemComponent,
+    CoverPhotoComponent,
+    SummaryComponent,
+    LogoComponent,
+    HeaderComponent,
+    GoodQuoteComponent,
+    BetterQuoteComponent,
+    BestQuoteComponent,
+    QuotesComponent,
+    SubTotalComponent,
+    NotesComponent,
+    EstimateComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule
