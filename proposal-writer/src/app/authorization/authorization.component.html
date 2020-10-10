@@ -1,23 +1,26 @@
 <div>
-  <section>
+  <section class="row">
     <!-- Option -->
-    <div>
+    <div class="col-auto">
       <input checked id="good" type="checkbox" />
       <label for="good"> &nbsp;Good</label>
     </div>
     <!-- Option -->
-    <div>
+    <div class="col-auto">
       <input disabled id="better" type="checkbox" />
       <label for="better"> &nbsp;Better</label>
     </div>
 
-    <div class="est-disclaimer">
-      Estimates are valid for 30 days from date of estimate / A 50% deposit is
-      requied before any project begins.
+    <div class="col-12 text-center">
+      <div class="est-disclaimer">
+        <span class="fa fa-info-circle text-secondary"></span> Estimates are valid for 30 days from date of estimate / A 50% deposit is
+        requied before any project begins.
+      </div>
     </div>
 
-    <!-- TODO: Make table responsive -->
-    <div class="table-responsive">
+    <!-- TODO: Change to list-group which is responsive -->
+   <div class="col-12">
+      <div class="table-responsive">
       <h6>Optional Upgrades:</h6>
       <table class="table table-sm table-striped">
         <tbody>
@@ -45,5 +48,6 @@
         </tbody>
       </table>
     </div>
+   </div>
   </section>
 </div>
