@@ -1,12 +1,7 @@
 <div class="container">
   <div class="row mt-3">
     <div class="col-8">
-      <div class="header">
-        <h5>Sample Quote</h5>
-        <div>ID# sample165hc10-2-2020</div>
-        <div>Date Created: 10-4-2020</div>
-        <div>Expires: 11-4-2020</div>
-      </div>
+      <app-header></app-header>
     </div>
     <div class="col-4">
       <app-logo></app-logo>
@@ -25,21 +20,28 @@
       <section>
         <h5>Terms and Conditions</h5>
         <app-terms-and-conditions></app-terms-and-conditions>
+        <app-terms-and-conditions></app-terms-and-conditions>
+        <app-terms-and-conditions></app-terms-and-conditions>
       </section>
       <section>
+        <h5><b>Estimates</b></h5>
         <ng-container>
-         <app-good-quote></app-good-quote>
+          <app-good-quote></app-good-quote>
         </ng-container>
         <ng-container>
           <app-better-quote></app-better-quote>
         </ng-container>
-        <app-best-quote></app-best-quote>
+        <ng-container *ngIf="true">
+          <app-best-quote></app-best-quote>
+        </ng-container>
       </section>
       <section>
         <h5>Authorization</h5>
+        <app-authorization></app-authorization>
       </section>
       <section>
         <h5>Signature</h5>
+        <app-signature></app-signature>
       </section>
     </div>
   </div>

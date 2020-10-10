@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+section > h5 {
+  color: #2c3e50;
+  border-bottom: solid thick #c53c3c;
+  width: auto;
+  display: table;
+  margin-bottom: 15px;
+}
+
+.list-group-item.header {
+  padding: 0px;
+
+  div.form-group {
+    padding: 10px;
+    background-color: lightgray;
+    margin-bottom: 0px;
+  }
+
+  h6 {
+    // color: rgb(163, 159, 159);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    // font-size: 1rem;
+  }
+}

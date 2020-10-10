@@ -1,1 +1,17 @@
-<app-line-item></app-line-item>
+<div class="mt-3 mb-3">
+  <ul class="list-group">
+    <li class='list-group-item header'>
+        <div class="form-group form-check">
+          <h6>
+          <input checked type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Good</label>
+        </h6>
+        </div>
+    </li>
+    <app-line-item [goodQuote]="goodQuote"></app-line-item>
+    <app-sub-total
+      [subtotal]="subtotal"
+      [total]="total"
+      ></app-sub-total>
+  </ul>
+</div>
