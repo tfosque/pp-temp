@@ -1,6 +1,7 @@
-<div>
-  <h5><b>Summary</b></h5>
-  <div>Subtotal:</div>
-  <div>Tax:</div>
-  <div>Total:</div>
-</div>
+<li class="list-group-item">
+  <div class="row">
+    <div class="col-8">Summary:</div>
+    <div class="col-4 text-right">Subtotal: {{ subtotal | currency }}</div>
+    <div class="col offset-8 text-right">Total: {{ total | currency }}</div>
+  </div>
+</li>

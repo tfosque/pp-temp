@@ -3,15 +3,12 @@
     <li class='list-group-item header'>
         <div class="form-group form-check">
           <h6>
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <input disabled type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Best</label>
         </h6>
         </div>
     </li>
-    <app-line-item [goodQuote]="bestQuote"></app-line-item>
-    <app-sub-total
-      [subtotal]="subtotal"
-      [total]="total"
-      ></app-sub-total>
+    <app-line-item [quote]="bestQuote"></app-line-item>
+    <app-summary [quote]="bestQuote"></app-summary>
   </ul>
 </div>

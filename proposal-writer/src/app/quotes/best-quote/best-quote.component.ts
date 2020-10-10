@@ -64,18 +64,14 @@ export class BestQuoteComponent implements OnInit {
     ]
   }];
   ngOnInit() {
-    this.calcTotals();
+    // this.calcTotals();
   }
 
   calcTotals() {
-    const [items] = this.bestQuote;
-    const subtotal = items.items.map(m => m.price * m.qty);
-    const reduced = subtotal.reduce((a, b) => a + b, 0);
-    this.subtotal = reduced;
-
-    console.log({items});
-    console.log({subtotal});
-    console.log({reduced});
+    // const [items] = this.bestQuote;
+    /*    console.log({items});
+       console.log({subtotal});
+       console.log({reduced}); */
   }
 
 }

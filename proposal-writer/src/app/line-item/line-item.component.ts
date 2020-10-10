@@ -7,13 +7,13 @@ import { Items } from '../models/good-quote';
   styleUrls: ['./line-item.component.scss']
 })
 export class LineItemComponent implements OnInit {
-  @Input() goodQuote: Items;
+  @Input() quote: Items;
   total: number;
 
   constructor() { }
 
   ngOnInit() {
-    console.log('good_quote:', this.goodQuote[0].items);
+    // console.log('good_quote:', this.quote[0].items);
     // this.goodQuote = this.data[0].items[0];
   }
 

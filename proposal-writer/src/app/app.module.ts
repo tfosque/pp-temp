@@ -17,9 +17,10 @@ import { BetterQuoteComponent } from './quotes/better-quote/better-quote.compone
 import { BestQuoteComponent } from './quotes/best-quote/best-quote.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { SubTotalComponent } from './quotes/sub-total/sub-total.component';
+import { NotesComponent } from './notes/notes.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
       IntroComponent,
       TermsAndConditionsComponent,
@@ -34,7 +35,8 @@ import { SubTotalComponent } from './quotes/sub-total/sub-total.component';
       BetterQuoteComponent,
       BestQuoteComponent,
       QuotesComponent,
-      SubTotalComponent
+      SubTotalComponent,
+      NotesComponent
    ],
   imports: [
     BrowserModule,

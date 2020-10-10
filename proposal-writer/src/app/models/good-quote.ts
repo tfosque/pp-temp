@@ -1,5 +1,5 @@
 export interface GoodQuote {
-  items: Items[];
+  items?: Items[];
   desc: string;
 }
 
